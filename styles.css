@@ -19,11 +19,11 @@
     border-radius: 10px;
     border: 2px
   }
-  @font-face {
+@font-face {
     font-family: 'ButtonFont';
     src: url(Fonts/RussoOne.ttf) format('woff2');
    }
-   @font-face {
+@font-face {
     font-family: 'Font';
     src: url(Fonts/Saira.ttf) format('woff2');
    }
