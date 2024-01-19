@@ -1,9 +1,29 @@
 * {
-  margin: 0
-  padding: 0
-}
-
-body {
-  background-color: black
-  color: white
-}
+    margin: 0;
+    padding: 0;
+    font-family: Font;
+  }
+  
+  body {
+    background-color: rgb(39, 39, 39);
+    color: rgb(177, 177, 177);
+    text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.15);
+    font-size: 25px;
+  }
+  button{
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.15);
+    font-family: 'ButtonFont';
+    border-radius: 10px;
+    border: 2px
+  }
+  @font-face {
+    font-family: 'ButtonFont';
+    src: url(Fonts/RussoOne.ttf) format('woff2');
+   }
+   @font-face {
+    font-family: 'Font';
+    src: url(Fonts/Saira.ttf) format('woff2');
+   }
