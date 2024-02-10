@@ -1,29 +1,46 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Font;
   }
-  
   body {
     background-color: rgb(39, 39, 39);
     color: rgb(177, 177, 177);
     text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.15);
     font-size: 25px;
+    font-family: MainFont;
   }
   button{
     background-color: rgb(54, 54, 54);
     color: rgb(255, 255, 255);
     font-size: 50px;
     text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.15);
-    font-family: 'ButtonFont';
+    font-family: 'SecondaryFont';
     border-radius: 10px;
-    border: 2px
+    border: 2px;
+    display: flex
   }
-@font-face {
-    font-family: 'ButtonFont';
+  img{
+    display: inline;
+    margin: 1.5rem;
+  }
+  navBar{
+    background-color: rgb(22, 22, 22);
+    color: rgb(177, 177, 177);
+    transition: all .3s;
+    box-shadow:  0 5px 8px rgb(59, 59, 59);
+    display: flex;
+  }
+  nemusnavbartext{
+    display: block;
+    color: white;
+    margin-top: 1.5rem;
+    font-family: SecondaryFont;
+  }
+  @font-face {
+    font-family: 'SecondaryFont';
     src: url(Fonts/RussoOne.ttf) format('woff2');
    }
-@font-face {
-    font-family: 'Font';
+   @font-face {
+    font-family: 'MainFont';
     src: url(Fonts/Saira.ttf) format('woff2');
    }

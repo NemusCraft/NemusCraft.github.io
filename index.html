@@ -2,19 +2,30 @@
 <html>
      <head> 
         <link rel="stylesheet" href="styles.css">
-        <title>
-            NemusWebsite
-        </title>
+        <title>NemusWebsite</title>
+        <link rel="icon" href="favicon.ico">
     </head>
+    <style>
+        button:hover {
+        cursor: pointer;
+        }
+    </style>
     <body>
-        <img src="NemusCraft.png">
+        <navBar id="navBar">
+            <img src="NemusLogo.png" width=60 px height=60 px>
+            <nemusnavbartext href="/" font="Fonts/RussoOne.ttf">
+                <h1 onclick="buttonClick()">NemusCraft</h1>
+            </nemusnavbartext>
+        </navBar>
+        <p></p>
+        <image src="NemusCraft.png">
         <p>idk, just normal website.</p>
-        <p>Click this button bc why not lmfao.</p>
-        <button onclick="buttonClick()">Hello there!</buttonclick>
+        <p>Click this button for my youtube channel!.</p>
+        <button onclick="buttonClick()">Hello World!</buttonclick>
     </body>
     <script>
         function buttonClick(){
-            alert("hello, this is nemuscraft.")
+            open(url="index.html")
         }
     </script>
 </html>
