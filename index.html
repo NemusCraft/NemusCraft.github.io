@@ -5,29 +5,34 @@
         <title>NemusWebsite</title>
         <link rel="icon" href="favicon.ico">
         <meta name="description" content="NemusCraft's totally fake website!!!">
-        <link rel="icon" type="img/ico" href="/favicon.ico">
+        <meta rel="icon" href="/favicon.ico"
     </head>
     <style>
         button:hover {
         cursor: pointer;
+        animation: forwards;
+        }
+        nav_maintext:hover {
+            cursor: pointer;
         }
     </style>
     <body>
         <navBar id="navBar">
             <img src="NemusLogo.png" width=60 px height=60 px>
-            <nemusnavbartext href="/" font="Fonts/RussoOne.ttf">
-                <h1 onclick="buttonClick()">NemusCraft</h1>
-            </nemusnavbartext>
+            <nav_maintext href="/">
+                <h1 onclick="buttonClick()" >NemusCraft</h1>
+            </nav_maintext>
         </navBar>
         <p></p>
         <image src="NemusCraft.png">
-        <p>idk, just normal website.</p>
-        <p>Click this button for my youtube channel!.</p>
+        <p>Welcome to NemusWebsite!</p>
+        <p>This website was my project for months...</p>
         <button onclick="buttonClick()">Hello World!</buttonclick>
     </body>
     <script>
         function buttonClick(){
             open(url="index.html")
         }
+        
     </script>
 </html>
