@@ -1,51 +1,54 @@
+:root {
+  --navbarHeight: 6.5vh;
+  --logoHeight: 5vh;
+}
+
 * {
     margin: 0;
     padding: 0;
   }
   body {
-    background-color: rgb(75, 75, 54);
-    color: rgb(253, 226, 151);
-    text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.15);
-    font-size: 25px;
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 255);
+    font-size: 4vh;
     font-family: MainFont;
   }
   button{
-    background-color: rgb(100, 100, 54);
-    color: rgb(255, 241, 176);
-    font-size: 50px;
-    text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.15);
-    font-family: 'SecondaryFont';
-    border-radius: 10px;
-    border: 2px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-family: 'MainFont';
+    border-radius: 1vh;
+    border: 0vh;
+    margin: 1.5vh;
+    padding: 1vh;
     display: flex
   }
-  img{
-    display: inline;
-    margin: 1.5rem;
-  }
-  navBar{
-    background-color: rgb(50, 50, 22);
+#navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    position: relative;
+    z-index: 1000;
+    height: var(--navbarHeight);
     color: rgb(177, 177, 177);
     transition: all .3s;
-    box-shadow:  0 5px 8px rgb(59, 59, 59);
-    display: flex;
-  }
-  nav_maintext{
-    display: block;
-    color: #ffe8bc;
-    margin-top: 1.5rem;
-    font-family: SecondaryFont;
-    display: flex;
-  }
-  .whitemode{
-    background-color: white;
-    color: black;
-  }
-  @font-face {
-    font-family: 'SecondaryFont';
-    src: url(Fonts/RussoOne.ttf) format('woff2');
-   }
+    box-shadow: 0 5px 8px rgba(24, 24, 24, 0.5);
+    #BarIcon{
+      width: auto;
+      height: auto;
+      max-height: var(--logoHeight);
+    };
+}
+#MainBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--navbarHeight));
+}
    @font-face {
     font-family: 'MainFont';
-    src: url(Fonts/Saira.ttf) format('woff2');
+    src: url(Fonts/Montserrat.ttf) format('woff2');
    }

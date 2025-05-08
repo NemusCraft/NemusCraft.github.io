@@ -3,35 +3,32 @@
      <head> 
         <link rel="stylesheet" href="styles.css">
         <title>NemusWebsite</title>
-        <link rel="icon" href="favicon.ico">
         <meta name="description" content="NemusCraft's totally fake website!!!">
-        <meta rel="icon" href="/favicon.ico"
+        <link rel="icon" href="./favicon.png" type="image/png">
     </head>
     <style>
         button:hover {
-        cursor: pointer;
-        animation: forwards;
+            cursor: pointer;
         }
-        nav_maintext:hover {
+    
+        #logo:hover {
             cursor: pointer;
         }
     </style>
     <body>
-        <navBar id="navBar">
-            <img src="NemusLogo.png" width=60 px height=60 px>
-            <nav_maintext href="/">
-                <h1 onclick="buttonClick()" >NemusCraft</h1>
-            </nav_maintext>
-        </navBar>
-        <p></p>
-        <image src="NemusCraft.png">
-        <p>Welcome to NemusWebsite!</p>
-        <p>This website was my project for months...</p>
-        <button onclick="buttonClick()">Hello World!</buttonclick>
+        <nav id="navBar">
+            <img id="BarIcon" src="NemusCraft.png" onclick="window.location.href='./'"">
+        </nav>
+
+        <div id="MainBody"> 
+            <img src="NemusCraft.png">
+            <p>Heya there! Welcome to my site named NemusWebsite!</p>
+            <button onclick="buttonClick()">Learn More</button>
+        </div>
     </body>
     <script>
         function buttonClick(){
-            open(url="index.html")
+            window.location.href='./404.html'
         }
         
     </script>
