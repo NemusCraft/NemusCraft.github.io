@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head> 
+  <link rel="stylesheet" href="istyles.css">
+  <title>NemusWebsite</title>
+  <meta name="description" content="Invites to servers.">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #121212;
+    }
+
+    #Main {
+      background-color: rgb(48, 48, 48);
+      width: 25vw;
+      height: 50vh;
+      border-radius: 3vh;
+      padding: 2vh 1vw;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+    }
+
+    h2 {
+      font-size: 2.75vh;
+      margin-bottom: 0vh;
+    }
+
+    .invite-list {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+    }
+
+    .invite-list li {
+      margin-bottom: 1.2vh;
+      text-align: center;
+    }
+
+    .invite-list a {
+      display: inline-block;
+      width: 10vw;
+      padding: 1.5vh 4vw;
+      font-size: 2vh;
+      background-color: #285ff5;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 3vh;
+      transition: background-color 0.5s ease;
+    }
+
+    .invite-list a:hover {
+      text-decoration: underline;
+      background-color: #0039a3;
+    }
+  </style>
+</head>
+<body>
+  <div id="Main">
+    <h2>Discord Invite Links</h2>
+    <ul class="invite-list">
+      <li><a href="https://discord.gg/R2rtGcrHak" target="_blank">Lumeo Stores</a></li>
+      <li><a href="https://discord.gg/Gbyhs5UaMB" target="_blank">NemusTechs</a></li>
+      <li><a href="https://discord.gg/X84mN9dSXw" target="_blank">Koko's Server</a></li>
+      <li><a href="https://discord.gg/4cssCZ8aQ7" target="_blank">Coffee Systems</a></li>
+      <li ><a style="background-color: #a10000" onclick="window.location.href='../'" target="_blank">Go back </a></li>
+    </ul>
+  </div>
+</body>
+</html>
